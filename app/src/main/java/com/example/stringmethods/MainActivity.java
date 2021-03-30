@@ -40,7 +40,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public String reversrString(String string) {
-        StringBuilder stringBuilder = new StringBuilder(string);
-        return (stringBuilder.reverse()).toString();
+       int textLength= string.length();
+//        StringBuilder stringBuilder = new StringBuilder(string);
+//        return (stringBuilder.reverse()).toString();
+        String reverse=" ";
+        for(int i=textLength-1;i>=0;i--){
+           reverse=reverse+string.charAt(i);
+
+        }
+        return reverse;
     }
 }

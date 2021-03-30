@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Et_inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btn_reverse"
+        android:background="@color/colorAccent"
+        android:hint="Enter Any Text"
+        android:textSize="30dp"/>
+<Button
+    android:id="@+id/btn_reverse"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@+id/Et_inputText"
+    app:layout_constraintBottom_toTopOf="@+id/reverseText"
+    android:text="Reverse"
+    android:background="@color/colorPrimaryDark"
+    android:textStyle="italic"
+   android:layout_margin="5dp"
+    />
+    <TextView
+        android:id="@+id/reverseText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintTop_toBottomOf="@id/btn_reverse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="30dp"
+
+     />
+</androidx.constraintlayout.widget.ConstraintLayout>
